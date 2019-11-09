@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <hl>这就是主页</hl>
+    <ul>
+        {% for gallery in gallerys %}
+        <li>
+            {{gallery.description}}
+            {{gallery.FIELDONME.url}}
+        </li>
+        {%endfor%}
+    </ul>
+</body>
+</html>
